@@ -1,0 +1,55 @@
+
+@media screen and (max-width: 980px) {
+
+.content {
+    line-height: 1.75;
+    max-width: 85%;
+    padding: 30px;
+}
+
+.title {
+    padding: 15px 0px;
+    font-size: 200%;
+}
+
+h1 {
+    /* float: left; */
+    /* align-content: center; */
+   left: 0px;
+   top: 0px;
+   padding: 25px 15px 5px;
+    /* border-bottom: 1px solid #cccccc; */
+    position: fixed;
+  font-size: 25px;
+}
+
+.caption {
+    width: 80%;
+    /* position: relative; */
+    bottom: 40px;
+    left: 120px;
+    /* transform: translate(-50%, -50%); */
+    font-size: 150%;
+    padding: 8px 0px;
+ }
+ 
+ .pic {
+    width: 50%;
+    width: 300px;
+     /*float: left;
+     position: relative; */
+ }
+
+ form {
+    font-size: 150%;
+    line-height: 1.3;
+}
+input[type=text] {
+    font-size: large;
+}
+
+img {
+    width: 80%;
+    height: 200px;
+}
+}

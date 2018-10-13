@@ -1,0 +1,52 @@
+
+@media screen and (max-width: 768px) {
+
+    
+    .links {
+        font-size: 150%;
+        margin-right: 8%;
+        margin-top: 4;
+    }
+    
+    .title {
+        font-size: 300%;
+    }
+    
+
+    input[type=text] {
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 200%;
+        line-height: 1.75;
+    }
+
+    .pic {
+        margin: auto;
+        left: 30px;    
+    }
+
+    #aboutmepic {
+        margin: 20px;
+        left: 0px;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    .caption {
+        width: 90%;
+        bottom: 50px;
+        left: 135px;
+    }
+
+    button {
+        font-size: 200%;
+    }
+
+    form {
+        font-size: 200%;
+        line-height: 1.5;
+    }
+
+    }

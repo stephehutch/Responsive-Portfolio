@@ -1,0 +1,79 @@
+@media screen and (max-width: 640px) {
+
+h1 {
+
+    left: -40;
+    text-align: CENTER;
+    Width: 100%;
+    top: 0px;
+    padding: 23px 0px 0px;
+}
+
+.background {
+    min-height: 2200px;
+}
+
+header {
+    
+    top: 70px;
+    width: 100%;
+    padding: 0px;
+    height: 89px;
+    /* text-align: center; */
+    margin: 0%;
+    /* z-index: 3; */
+}
+
+.links {
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+
+
+.pic {
+    margin-left: 30px;
+}
+
+#aboutmepic:hover {
+    /* opacity: .5; */
+}
+
+#aboutmepic {
+    width: 500px;
+}
+img {
+        width: 400px;
+        height: auto;
+    
+}
+
+.content {
+    top: 200px;
+    padding: 10px;
+    padding: 30px;
+}
+
+.caption {
+    width: 400px;
+    left: 200px;
+}
+
+ul {
+    float: none;
+}
+
+.title {
+    padding: 0px;
+}
+form {
+    font-size: 130%;
+}
+
+input[type=text] {
+    font-size: 100%;
+}
+
+
+}

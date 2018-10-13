@@ -1,0 +1,37 @@
+all
+
+.caption {
+    font-family: George;
+    background-color: teal;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+}
+
+
+
+
+@980
+
+.caption {
+   > width: 80%;
+    position: relative;
+  >  bottom: 80px;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    font-size: 150%;
+   > padding: 15px 0px;
+}
+
+.pic {
+    float: left;
+    width: 50%;
+    /* margin: 30px; */
+    /* position: relative; */
+}
+
+img {
+    width: 80%;
+    /* height: 200px; */
+    /* position: relative; */
+}
