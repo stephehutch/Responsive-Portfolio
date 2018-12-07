@@ -26,21 +26,85 @@
         <H2 class="title">Contact Me</H2>
         <form>
             <label for="name">First Name</label>
-            <input type="text" id="name" name="name" value="sample">
+            <input type="text" id="fname-input" name="name" value="sample">
+        </form>
+                <form>
+            <label for="name">Last Name</label>
+            <input type="text" id="lname-input" name="name" value="sample">
         </form>
         <form>
             <label for="email">Email</label>
-            <input type="text" id="email" email="email" value="sample@sample.com">
+            <input type="text" id="email-input" email="email" value="sample@sample.com">
         </form>
         <form>
             <label for="message">Message</label>
-            <input type="text" id="message" email="message" style="height:200px">
+            <input type="text" id="message-body" email="message" style="height:200px">
         </form>
-        <button>SUBMIT</button>
+        <button type="submit" id="submit-btn">Submit</button>
       </div>
     </div>
     <footer>
             <em>Stephanie Hutchinson</em>
         </footer>
+        <!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+    
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyChJYQ169bWJdUSqkTQRo795oyidb6bew0",
+    authDomain: "contact-me-page.firebaseapp.com",
+    databaseURL: "https://contact-me-page.firebaseio.com",
+    projectId: "contact-me-page",
+    storageBucket: "contact-me-page.appspot.com",
+    messagingSenderId: "483872766661"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+    
+
+$( document ).ready(function() {
+
+const database = firebase.database();
+
+// Initial Variables 
+let firstName = "";
+let lastName = "";
+let email = "";
+let message = "";
+
+// Click Button changes what is stored in firebase
+$("#submit-btn").on("click", function (event) {
+  
+  // Prevent the page from refreshing
+  event.preventDefault();
+
+  // Get inputs
+  firstName = $("#fname-input").val().trim();
+  lastName = $("#lname-input").val().trim();
+  email = $("#email-input").val().trim();
+  message = $("#message-body").val().trim();
+
+  //update firebase
+  database.ref().push({
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+    message: message,
+  });
+
+
+
+});
+
+
+
+});
+</script>
 </body>
 </html>
